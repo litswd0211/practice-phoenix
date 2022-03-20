@@ -6,6 +6,6 @@ defmodule Realworld.Repo.Migrations.AddColumnAuthorIdToArticles do
       add(:author_id, references(:users, on_delete: :nothing))
     end
 
-    creare(index(:articles, [:author_id]))
+    create(index(:articles, [:author_id]))
   end
 end
